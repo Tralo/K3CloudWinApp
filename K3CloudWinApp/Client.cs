@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace K3CloudWinApp
 {
-    public partial class Main : Form
+    public partial class Client : Form
     {
-        private Client client;
-        public Main()
+        public Client()
         {
             InitializeComponent();
-            client = new Client();
-        }
-
-        private void btn_client_Click(object sender, EventArgs e)
-        {
-            client.ShowDialog(this);
         }
     }
 }

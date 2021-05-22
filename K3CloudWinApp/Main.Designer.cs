@@ -41,6 +41,7 @@
             this.btn_client.TabIndex = 0;
             this.btn_client.Text = "客户";
             this.btn_client.UseVisualStyleBackColor = true;
+            this.btn_client.Click += new System.EventHandler(this.btn_client_Click);
             // 
             // btn_material
             // 
