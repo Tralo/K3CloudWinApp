@@ -1,6 +1,6 @@
 ﻿namespace K3CloudWinApp
 {
-    partial class Form1
+    partial class MainStart
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.bt_url = new System.Windows.Forms.TextBox();
+            this.tb_url = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_dbid = new System.Windows.Forms.TextBox();
+            this.tb_user = new System.Windows.Forms.TextBox();
+            this.tb_pwd = new System.Windows.Forms.TextBox();
             this.btn_update = new System.Windows.Forms.Button();
             this.btn_start = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // bt_url
+            // tb_url
             // 
-            this.bt_url.Location = new System.Drawing.Point(127, 34);
-            this.bt_url.Name = "bt_url";
-            this.bt_url.Size = new System.Drawing.Size(348, 28);
-            this.bt_url.TabIndex = 0;
+            this.tb_url.Location = new System.Drawing.Point(127, 34);
+            this.tb_url.Name = "tb_url";
+            this.tb_url.Size = new System.Drawing.Size(348, 28);
+            this.tb_url.TabIndex = 0;
             // 
             // label1
             // 
@@ -84,26 +84,26 @@
             this.label4.Text = "用户密码";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // textBox2
+            // tb_dbid
             // 
-            this.textBox2.Location = new System.Drawing.Point(127, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(348, 28);
-            this.textBox2.TabIndex = 5;
+            this.tb_dbid.Location = new System.Drawing.Point(127, 76);
+            this.tb_dbid.Name = "tb_dbid";
+            this.tb_dbid.Size = new System.Drawing.Size(348, 28);
+            this.tb_dbid.TabIndex = 5;
             // 
-            // textBox3
+            // tb_user
             // 
-            this.textBox3.Location = new System.Drawing.Point(127, 127);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(348, 28);
-            this.textBox3.TabIndex = 6;
+            this.tb_user.Location = new System.Drawing.Point(127, 127);
+            this.tb_user.Name = "tb_user";
+            this.tb_user.Size = new System.Drawing.Size(348, 28);
+            this.tb_user.TabIndex = 6;
             // 
-            // textBox4
+            // tb_pwd
             // 
-            this.textBox4.Location = new System.Drawing.Point(127, 173);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(348, 28);
-            this.textBox4.TabIndex = 7;
+            this.tb_pwd.Location = new System.Drawing.Point(127, 173);
+            this.tb_pwd.Name = "tb_pwd";
+            this.tb_pwd.Size = new System.Drawing.Size(348, 28);
+            this.tb_pwd.TabIndex = 7;
             // 
             // btn_update
             // 
@@ -132,14 +132,14 @@
             this.ClientSize = new System.Drawing.Size(523, 320);
             this.Controls.Add(this.btn_start);
             this.Controls.Add(this.btn_update);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tb_pwd);
+            this.Controls.Add(this.tb_user);
+            this.Controls.Add(this.tb_dbid);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bt_url);
+            this.Controls.Add(this.tb_url);
             this.Name = "Form1";
             this.Text = "设置";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -150,14 +150,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox bt_url;
+        private System.Windows.Forms.TextBox tb_url;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_dbid;
+        private System.Windows.Forms.TextBox tb_user;
+        private System.Windows.Forms.TextBox tb_pwd;
         private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.Button btn_start;
     }
