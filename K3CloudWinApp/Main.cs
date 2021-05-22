@@ -12,27 +12,47 @@ namespace K3CloudWinApp
 {
     public partial class Main : Form
     {
-        private Client client;
+        private WebApi webApi;
         public Main()
         {
             InitializeComponent();
-            client = new Client();
+            
         }
 
         private void btn_client_Click(object sender, EventArgs e)
         {
+            closeBefore();
             Global.curType = 1;
-            client.ShowDialog(this);
+            Global.db_table = Global.map[Global.curType];
+            webApi = new WebApi();
+            webApi.ShowDialog(this);
         }
 
         private void btn_material_Click(object sender, EventArgs e)
         {
+            closeBefore();
+            
             Global.curType = 2;
+            Global.db_table = Global.map[Global.curType];
+            webApi = new WebApi();
+            webApi.ShowDialog(this);
         }
 
         private void btn_supplier_Click(object sender, EventArgs e)
         {
+            closeBefore();
             Global.curType = 3;
+            Global.db_table = Global.map[Global.curType];
+            webApi = new WebApi();
+            webApi.ShowDialog(this);
+        }
+
+        private void closeBefore()
+        {
+            if (webApi != null)
+            {
+                webApi.Dispose();
+            }
         }
     }
 }

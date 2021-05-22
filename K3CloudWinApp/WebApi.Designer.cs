@@ -1,6 +1,6 @@
 ﻿namespace K3CloudWinApp
 {
-    partial class Client
+    partial class WebApi
     {
         /// <summary>
         /// Required designer variable.
@@ -118,7 +118,7 @@
             this.tb_show.Size = new System.Drawing.Size(982, 580);
             this.tb_show.TabIndex = 8;
             // 
-            // Client
+            // WebApi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_research);
-            this.Name = "Client";
+            this.Name = "WebApi";
             this.Text = "客户";
             this.ResumeLayout(false);
             this.PerformLayout();

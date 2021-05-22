@@ -10,15 +10,15 @@ using System.Windows.Forms;
 
 namespace K3CloudWinApp
 {
-    public partial class Client : Form
+    public partial class WebApi : Form
     {
         private string id;
         private string number;
-        private string db_table;
-        public Client()
+        public WebApi()
         {
             InitializeComponent();
-            db_table = Global.map[Global.curType];
+            Console.Write(Global.db_table);
+            Console.ReadLine();
         }
 
         private void btn_research_Click(object sender, EventArgs e)
@@ -39,7 +39,7 @@ namespace K3CloudWinApp
                 resStr = "{'CreateOrgId':0,'Number':'" + number + "','Id':''}";
             }
 
-            string result = Global.client.View(db_table, resStr);
+            string result = Global.client.View(Global.db_table, resStr);
             tb_show.Text = "";
             tb_show.Text = result;
         }
