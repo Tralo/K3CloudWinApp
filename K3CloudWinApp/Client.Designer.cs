@@ -36,7 +36,7 @@
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_create = new System.Windows.Forms.Button();
             this.btn_update = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_show = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_research
@@ -47,6 +47,7 @@
             this.btn_research.TabIndex = 0;
             this.btn_research.Text = "查询";
             this.btn_research.UseVisualStyleBackColor = true;
+            this.btn_research.Click += new System.EventHandler(this.btn_research_Click);
             // 
             // label1
             // 
@@ -107,21 +108,22 @@
             this.btn_update.Text = "更新";
             this.btn_update.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // tb_show
             // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.textBox1.Location = new System.Drawing.Point(42, 183);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(937, 426);
-            this.textBox1.TabIndex = 8;
+            this.tb_show.Enabled = false;
+            this.tb_show.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tb_show.Location = new System.Drawing.Point(42, 183);
+            this.tb_show.Multiline = true;
+            this.tb_show.Name = "tb_show";
+            this.tb_show.Size = new System.Drawing.Size(982, 580);
+            this.tb_show.TabIndex = 8;
             // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1062, 655);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1065, 792);
+            this.Controls.Add(this.tb_show);
             this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_create);
             this.Controls.Add(this.btn_del);
@@ -147,6 +149,6 @@
         private System.Windows.Forms.Button btn_del;
         private System.Windows.Forms.Button btn_create;
         private System.Windows.Forms.Button btn_update;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_show;
     }
 }

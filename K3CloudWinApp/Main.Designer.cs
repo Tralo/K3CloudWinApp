@@ -51,6 +51,7 @@
             this.btn_material.TabIndex = 1;
             this.btn_material.Text = "物料";
             this.btn_material.UseVisualStyleBackColor = true;
+            this.btn_material.Click += new System.EventHandler(this.btn_material_Click);
             // 
             // btn_supplier
             // 
@@ -60,6 +61,7 @@
             this.btn_supplier.TabIndex = 2;
             this.btn_supplier.Text = "供应商";
             this.btn_supplier.UseVisualStyleBackColor = true;
+            this.btn_supplier.Click += new System.EventHandler(this.btn_supplier_Click);
             // 
             // Main
             // 

@@ -57,6 +57,9 @@ namespace K3CloudWinApp
             {
                 Utils.showTip("连接成功");
                 Global.client = client;
+                Global.map.Add(1, "BD_Customer");
+                Global.map.Add(2, "BD_MATERIAL");
+                Global.map.Add(3, "BD_Supplier");
                 this.Close();
                 Thread th = new Thread(delegate()
                 {

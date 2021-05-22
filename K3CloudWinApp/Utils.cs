@@ -18,5 +18,10 @@ namespace K3CloudWinApp
         {
             MessageBox.Show(txt);
         }
+
+        public static Boolean checkIdOrNumber(string id, string number)
+        {
+            return !isEmpty(id) ? true : !isEmpty(number);
+        }
     }
 }

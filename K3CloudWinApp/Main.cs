@@ -21,7 +21,18 @@ namespace K3CloudWinApp
 
         private void btn_client_Click(object sender, EventArgs e)
         {
+            Global.curType = 1;
             client.ShowDialog(this);
+        }
+
+        private void btn_material_Click(object sender, EventArgs e)
+        {
+            Global.curType = 2;
+        }
+
+        private void btn_supplier_Click(object sender, EventArgs e)
+        {
+            Global.curType = 3;
         }
     }
 }
