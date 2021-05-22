@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Kingdee.BOS.WebApi.Client;
 using Newtonsoft.Json.Linq;
-
+using System.Threading;
 namespace K3CloudWinApp
 {
     public partial class MainStart : Form
@@ -57,6 +57,12 @@ namespace K3CloudWinApp
             {
                 Utils.showTip("连接成功");
                 Global.client = client;
+                this.Close();
+                Thread th = new Thread(delegate()
+                {
+                    new Main().ShowDialog();
+                });
+                th.Start();
             }
             else
             {

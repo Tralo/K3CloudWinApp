@@ -10,3 +10,4 @@ E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\bin\Debug\Kingdee.BOS.WebApi.Client.
 E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\bin\Debug\Newtonsoft.Json.dll
 E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\bin\Debug\Newtonsoft.Json.xml
 E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.MainStart.resources
+E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.Main.resources
