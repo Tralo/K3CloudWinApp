@@ -35,15 +35,17 @@
             this.tb_number = new System.Windows.Forms.TextBox();
             this.btn_del = new System.Windows.Forms.Button();
             this.btn_create = new System.Windows.Forms.Button();
-            this.btn_update = new System.Windows.Forms.Button();
             this.tb_show = new System.Windows.Forms.TextBox();
+            this.btn_post = new System.Windows.Forms.Button();
+            this.btn_verify = new System.Windows.Forms.Button();
+            this.btn_antiverify = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_research
             // 
-            this.btn_research.Location = new System.Drawing.Point(263, 89);
+            this.btn_research.Location = new System.Drawing.Point(191, 88);
             this.btn_research.Name = "btn_research";
-            this.btn_research.Size = new System.Drawing.Size(124, 48);
+            this.btn_research.Size = new System.Drawing.Size(114, 48);
             this.btn_research.TabIndex = 0;
             this.btn_research.Text = "查询";
             this.btn_research.UseVisualStyleBackColor = true;
@@ -83,9 +85,9 @@
             // 
             // btn_del
             // 
-            this.btn_del.Location = new System.Drawing.Point(757, 89);
+            this.btn_del.Location = new System.Drawing.Point(330, 88);
             this.btn_del.Name = "btn_del";
-            this.btn_del.Size = new System.Drawing.Size(144, 48);
+            this.btn_del.Size = new System.Drawing.Size(104, 48);
             this.btn_del.TabIndex = 5;
             this.btn_del.Text = "删除";
             this.btn_del.UseVisualStyleBackColor = true;
@@ -95,20 +97,11 @@
             // 
             this.btn_create.Location = new System.Drawing.Point(12, 89);
             this.btn_create.Name = "btn_create";
-            this.btn_create.Size = new System.Drawing.Size(155, 48);
+            this.btn_create.Size = new System.Drawing.Size(153, 48);
             this.btn_create.TabIndex = 6;
-            this.btn_create.Text = "新增";
+            this.btn_create.Text = "新增更新";
             this.btn_create.UseVisualStyleBackColor = true;
             this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
-            // 
-            // btn_update
-            // 
-            this.btn_update.Location = new System.Drawing.Point(511, 89);
-            this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(127, 48);
-            this.btn_update.TabIndex = 7;
-            this.btn_update.Text = "更新";
-            this.btn_update.UseVisualStyleBackColor = true;
             // 
             // tb_show
             // 
@@ -119,13 +112,43 @@
             this.tb_show.Size = new System.Drawing.Size(982, 580);
             this.tb_show.TabIndex = 8;
             // 
+            // btn_post
+            // 
+            this.btn_post.Location = new System.Drawing.Point(477, 88);
+            this.btn_post.Name = "btn_post";
+            this.btn_post.Size = new System.Drawing.Size(106, 49);
+            this.btn_post.TabIndex = 9;
+            this.btn_post.Text = "提交";
+            this.btn_post.UseVisualStyleBackColor = true;
+            this.btn_post.Click += new System.EventHandler(this.btn_post_Click);
+            // 
+            // btn_verify
+            // 
+            this.btn_verify.Location = new System.Drawing.Point(614, 87);
+            this.btn_verify.Name = "btn_verify";
+            this.btn_verify.Size = new System.Drawing.Size(108, 50);
+            this.btn_verify.TabIndex = 10;
+            this.btn_verify.Text = "审核";
+            this.btn_verify.UseVisualStyleBackColor = true;
+            // 
+            // btn_antiverify
+            // 
+            this.btn_antiverify.Location = new System.Drawing.Point(761, 87);
+            this.btn_antiverify.Name = "btn_antiverify";
+            this.btn_antiverify.Size = new System.Drawing.Size(103, 50);
+            this.btn_antiverify.TabIndex = 11;
+            this.btn_antiverify.Text = "反审核";
+            this.btn_antiverify.UseVisualStyleBackColor = true;
+            // 
             // WebApi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1065, 792);
+            this.Controls.Add(this.btn_antiverify);
+            this.Controls.Add(this.btn_verify);
+            this.Controls.Add(this.btn_post);
             this.Controls.Add(this.tb_show);
-            this.Controls.Add(this.btn_update);
             this.Controls.Add(this.btn_create);
             this.Controls.Add(this.btn_del);
             this.Controls.Add(this.tb_number);
@@ -149,7 +172,9 @@
         private System.Windows.Forms.TextBox tb_number;
         private System.Windows.Forms.Button btn_del;
         private System.Windows.Forms.Button btn_create;
-        private System.Windows.Forms.Button btn_update;
         private System.Windows.Forms.TextBox tb_show;
+        private System.Windows.Forms.Button btn_post;
+        private System.Windows.Forms.Button btn_verify;
+        private System.Windows.Forms.Button btn_antiverify;
     }
 }

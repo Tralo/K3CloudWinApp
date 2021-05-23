@@ -82,6 +82,32 @@ namespace K3CloudWinApp
             clientAddOrUpdate.ShowDialog(this);
         }
 
+        private void btn_update_Click(object sender, EventArgs e)
+        {
+
+        }
+        //提交
+        private void btn_post_Click(object sender, EventArgs e)
+        {
+            if (!check())
+            {
+                Utils.showTip("请输入内码或者编码");
+                return;
+            }
+            string resStr = "";
+            if (!Utils.isEmpty(id))
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':[],'Ids':'" + id + "','SelectedPostId':0,'NetworkCtrl':''}";
+            }
+            else
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':[" + number + "],'Ids':'','SelectedPostId':0,'NetworkCtrl':''}";
+            }
+            string result = Global.client.Delete(Global.db_table, resStr);
+            tb_show.Text = "";
+            tb_show.Text = "提交结果：   " + result;
+        }
+
         
     }
 }
