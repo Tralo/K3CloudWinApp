@@ -49,9 +49,6 @@ namespace K3CloudWinApp
                 "'FPayCurrencyId': {" + 
                 "'FNumber': 'PRE001' } } } }";   //结算币别
             string reslut = Global.client.Save(Global.db_table, jsonStr);
-            Console.WriteLine(Global.db_table);
-            Console.WriteLine(jsonStr);
-            Console.ReadLine();
             tb_show.Text = "";
             tb_show.Text = "新增结果: " + reslut;
         }
@@ -95,9 +92,6 @@ namespace K3CloudWinApp
                 "'FPayCurrencyId': {" +
                 "'FNumber': 'PRE001' } } } }";   //结算币别
             string reslut = Global.client.Save(Global.db_table, jsonStr);
-            Console.WriteLine(Global.db_table);
-            Console.WriteLine(jsonStr);
-            Console.ReadLine();
             tb_show.Text = "";
             tb_show.Text = "修改结果: " + reslut;
         }
