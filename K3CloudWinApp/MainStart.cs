@@ -10,18 +10,25 @@ using System.Windows.Forms;
 using Kingdee.BOS.WebApi.Client;
 using Newtonsoft.Json.Linq;
 using System.Threading;
+using System.Configuration;
 namespace K3CloudWinApp
 {
     public partial class MainStart : Form
     {
+        private string path = "";
         public MainStart()
         {
             InitializeComponent();
+            
+            
         }
 
         private void btn_update_Click(object sender, EventArgs e)
         {
-
+            Write_keyValue(path, "url", tb_url.Text);
+            Write_keyValue(path, "dbid", tb_dbid.Text);
+            Write_keyValue(path, "user", tb_user.Text);
+            Write_keyValue(path, "pwd", tb_pwd.Text);
         }
 
         private void btn_start_Click(object sender, EventArgs e)
@@ -79,7 +86,37 @@ namespace K3CloudWinApp
             tb_dbid.Text = Global.dbid;
             tb_user.Text = Global.user;
             tb_pwd.Text = Global.pwd;
+            //path = Application.ExecutablePath + ".config";
+            //tb_url.Text = Read_keyValue(path, "url");
+            //tb_dbid.Text = Read_keyValue(path, "dbid");
+            //tb_user.Text = Read_keyValue(path, "user");
+            //tb_pwd.Text = Read_keyValue(path, "pwd");
             
+        }
+
+        string Read_keyValue(string path, string keyName)
+        {
+            
+            Configuration config = ConfigurationManager.OpenExeConfiguration(path);
+            Console.WriteLine(keyName + "   " + path);
+            Console.ReadLine();
+            return config.AppSettings.Settings[keyName].Value;
+            
+        }
+
+        private void Write_keyValue(string path, String keyName, string value)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(path);
+            foreach (string key in config.AppSettings.Settings.AllKeys)
+            {
+                if (key == keyName)
+                {
+                    config.AppSettings.Settings.Remove(key);
+                }
+            }
+            config.AppSettings.Settings.Add(keyName, value);
+            config.Save(ConfigurationSaveMode.Modified);
+            ConfigurationManager.RefreshSection("AppSettings");
         }
 
         
