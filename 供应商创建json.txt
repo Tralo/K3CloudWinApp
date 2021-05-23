@@ -1,0 +1,27 @@
+"{
+    'NeedUpDateFields': [],
+    'NeedReturnFields': [],
+    'IsDeleteEntry': 'true',
+    'SubSystemId': '',
+    'IsVerifyBaseDataField': 'false',
+    'IsEntryBatchFill': 'true',
+    'ValidateFlag': 'true',
+    'NumberSearch': 'true',
+    'InterationFlags': '',
+    'Model': {
+        'FSupplierId': 0, //更新时可以
+        'FCreateOrgId': {
+            'FNumber': '101.2'    //这里用总装事业部，只有块组织有这权限
+        },
+        'FNumber': '',  //更新时可以
+        'FUseOrgId': {
+            'FNumber': '101.2'    //这里用总装事业部，只有块组织有这权限
+        },
+        'FName': 'demo供应',
+        'FFinanceInfo': {
+            'FPayCurrencyId': {
+                'FNumber': 'PRE001'  //结算币别
+            }
+        }
+    }
+}"

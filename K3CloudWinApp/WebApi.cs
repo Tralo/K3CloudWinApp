@@ -82,14 +82,29 @@ namespace K3CloudWinApp
             tb_show.Text = "删除结果：   " + result;
         }
         private ClientAddOrUpdate clientAddOrUpdate;
+        private SupplierAddorUpdate supplierAddorUpdate;
         private void btn_create_Click(object sender, EventArgs e)
         {
             if (clientAddOrUpdate != null)
             {
                 clientAddOrUpdate.Dispose();
             }
-            clientAddOrUpdate = new ClientAddOrUpdate();
-            clientAddOrUpdate.ShowDialog(this);
+            if(supplierAddorUpdate != null){
+                supplierAddorUpdate.Dispose();
+            }
+            switch (Global.curType)
+            {
+                case 1:
+                    clientAddOrUpdate = new ClientAddOrUpdate();
+                    clientAddOrUpdate.ShowDialog(this);
+                    break;
+                case 2:
+                    break;
+                case 3:
+                    supplierAddorUpdate = new SupplierAddorUpdate();
+                    supplierAddorUpdate.ShowDialog(this);
+                    break;
+            }
         }
 
         private void btn_update_Click(object sender, EventArgs e)
