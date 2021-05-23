@@ -51,6 +51,27 @@ namespace K3CloudWinApp
             return Utils.checkIdOrNumber(id, number);
         }
 
+        private void btn_del_Click(object sender, EventArgs e)
+        {
+            if (!check())
+            {
+                Utils.showTip("请输入内码或者编码");
+                return;
+            }
+            string resStr = "";
+            if (!Utils.isEmpty(id))
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':[],'Ids':'" + id + "','NetworkCtrl':''}";
+            }
+            else
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':[" + number + "],'Ids':'','NetworkCtrl':''}";
+            }
+            string result = Global.client.Delete(Global.db_table, resStr);
+            tb_show.Text = "";
+            tb_show.Text = "删除结果：   " + result;
+        }
+
         
     }
 }

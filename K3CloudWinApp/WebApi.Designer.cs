@@ -89,6 +89,7 @@
             this.btn_del.TabIndex = 5;
             this.btn_del.Text = "删除";
             this.btn_del.UseVisualStyleBackColor = true;
+            this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
             // 
             // btn_create
             // 
@@ -110,7 +111,6 @@
             // 
             // tb_show
             // 
-            this.tb_show.Enabled = false;
             this.tb_show.Font = new System.Drawing.Font("宋体", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tb_show.Location = new System.Drawing.Point(42, 183);
             this.tb_show.Multiline = true;

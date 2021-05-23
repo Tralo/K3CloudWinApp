@@ -12,3 +12,17 @@ E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\bin\Debug\Newtonsoft.Json.xml
 E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.MainStart.resources
 E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.Main.resources
 E:\k3cloud_proj\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.WebApi.resources
+E:\K3CloudWinApp\K3CloudWinApp\bin\Debug\K3CloudWinApp.exe.config
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.exe
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.pdb
+E:\K3CloudWinApp\K3CloudWinApp\bin\Debug\K3CloudWinApp.exe
+E:\K3CloudWinApp\K3CloudWinApp\bin\Debug\K3CloudWinApp.pdb
+E:\K3CloudWinApp\K3CloudWinApp\bin\Debug\Kingdee.BOS.WebApi.Client.dll
+E:\K3CloudWinApp\K3CloudWinApp\bin\Debug\Newtonsoft.Json.dll
+E:\K3CloudWinApp\K3CloudWinApp\bin\Debug\Newtonsoft.Json.xml
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.csprojResolveAssemblyReference.cache
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.WebApi.resources
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.Main.resources
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.MainStart.resources
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.Properties.Resources.resources
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.csproj.GenerateResource.Cache
