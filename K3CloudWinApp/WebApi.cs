@@ -17,8 +17,18 @@ namespace K3CloudWinApp
         public WebApi()
         {
             InitializeComponent();
-            Console.Write(Global.db_table);
-            Console.ReadLine();
+            switch (Global.curType)
+            {
+                case 1:
+                    this.Text = "客户";
+                    break;
+                case 2:
+                    this.Text = "物料";
+                    break;
+                case 3:
+                    this.Text = "供应商";
+                    break;
+            }
         }
 
         private void btn_research_Click(object sender, EventArgs e)
@@ -65,7 +75,7 @@ namespace K3CloudWinApp
             }
             else
             {
-                resStr = "{'CreateOrgId':0,'Numbers':[" + number + "],'Ids':'','NetworkCtrl':''}";
+                resStr = "{'CreateOrgId':0,'Numbers':['" + number + "'],'Ids':'','NetworkCtrl':''}";
             }
             string result = Global.client.Delete(Global.db_table, resStr);
             tb_show.Text = "";
@@ -101,11 +111,56 @@ namespace K3CloudWinApp
             }
             else
             {
-                resStr = "{'CreateOrgId':0,'Numbers':[" + number + "],'Ids':'','SelectedPostId':0,'NetworkCtrl':''}";
+                resStr = "{'CreateOrgId':0,'Numbers':['" + number + "'],'Ids':'','SelectedPostId':0,'NetworkCtrl':''}";
             }
-            string result = Global.client.Delete(Global.db_table, resStr);
+            string result = Global.client.Submit(Global.db_table, resStr);
             tb_show.Text = "";
             tb_show.Text = "提交结果：   " + result;
+        }
+
+        private void btn_verify_Click(object sender, EventArgs e)
+        {
+            if (!check())
+            {
+                Utils.showTip("请输入内码或者编码");
+                return;
+            }
+            string resStr = "";
+            if (!Utils.isEmpty(id))
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':[],'Ids':" + id + ",'InterationFlags':'','NetworkCtrl':''}";
+            }
+            else
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':['" + number + "'],'Ids':'','InterationFlags':'','NetworkCtrl':''}";
+            }
+            string result = Global.client.Audit(Global.db_table, resStr);
+            tb_show.Text = "";
+            tb_show.Text = "审核结果：   " + result;
+
+
+        }
+
+        private void btn_antiverify_Click(object sender, EventArgs e)
+        {
+
+            if (!check())
+            {
+                Utils.showTip("请输入内码或者编码");
+                return;
+            }
+            string resStr = "";
+            if (!Utils.isEmpty(id))
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':[],'Ids':" + id + ",'InterationFlags':'','NetworkCtrl':''}";
+            }
+            else
+            {
+                resStr = "{'CreateOrgId':0,'Numbers':['" + number + "'],'Ids':'','InterationFlags':'','NetworkCtrl':''}";
+            }
+            string result = Global.client.UnAudit(Global.db_table, resStr);
+            tb_show.Text = "";
+            tb_show.Text = "反审核结果：   " + result;
         }
 
         

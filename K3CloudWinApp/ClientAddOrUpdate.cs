@@ -15,6 +15,7 @@ namespace K3CloudWinApp
         public ClientAddOrUpdate()
         {
             InitializeComponent();
+            
         }
 
         private void btn_addUpdate_Click(object sender, EventArgs e)
@@ -27,7 +28,7 @@ namespace K3CloudWinApp
             }
             string str ="{" + 
                     "'NeedUpDateFields': []," +
-                    " 'NeedReturnFields': ['FCUSTID']," + 
+                    " 'NeedReturnFields': ['FCUSTID','FNUMBER']," + 
                     "'IsDeleteEntry': 'true'," + 
                     " 'SubSystemId': ''," + 
                     "'IsVerifyBaseDataField': 'false'," + 

@@ -130,6 +130,7 @@
             this.btn_verify.TabIndex = 10;
             this.btn_verify.Text = "审核";
             this.btn_verify.UseVisualStyleBackColor = true;
+            this.btn_verify.Click += new System.EventHandler(this.btn_verify_Click);
             // 
             // btn_antiverify
             // 
@@ -139,6 +140,7 @@
             this.btn_antiverify.TabIndex = 11;
             this.btn_antiverify.Text = "反审核";
             this.btn_antiverify.UseVisualStyleBackColor = true;
+            this.btn_antiverify.Click += new System.EventHandler(this.btn_antiverify_Click);
             // 
             // WebApi
             // 
