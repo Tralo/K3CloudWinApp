@@ -1,0 +1,25 @@
+"{
+    'NeedUpDateFields': [],
+    'NeedReturnFields': [],
+    'IsDeleteEntry': 'true',
+    'SubSystemId': '',
+    'IsVerifyBaseDataField': 'false',
+    'IsEntryBatchFill': 'true',
+    'ValidateFlag': 'true',
+    'NumberSearch': 'true',
+    'InterationFlags': '',
+    'Model': {
+        'FCUSTID': 0,
+        'FCreateOrgId': {
+            'FNumber': '103'     //销售公司
+        },
+        'FNumber': '',
+        'FUseOrgId': {
+            'FNumber': '103'   //销售公司
+        },
+        'FName': 'Demo测试',
+        'FTRADINGCURRID': {   //币别
+            'FNumber': 'PRE001'
+        }
+    }
+}"

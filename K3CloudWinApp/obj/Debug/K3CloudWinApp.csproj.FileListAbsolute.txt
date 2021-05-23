@@ -26,3 +26,4 @@ E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.Main.resources
 E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.MainStart.resources
 E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.Properties.Resources.resources
 E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.csproj.GenerateResource.Cache
+E:\K3CloudWinApp\K3CloudWinApp\obj\Debug\K3CloudWinApp.ClientAddOrUpdate.resources

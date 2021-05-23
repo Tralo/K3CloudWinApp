@@ -99,6 +99,7 @@
             this.btn_create.TabIndex = 6;
             this.btn_create.Text = "新增";
             this.btn_create.UseVisualStyleBackColor = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
             // 
             // btn_update
             // 

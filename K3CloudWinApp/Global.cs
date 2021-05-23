@@ -17,6 +17,7 @@ namespace K3CloudWinApp
         public static Dictionary<int, string> map = new Dictionary<int, string>();
         public static int curType = 1; // 1: 客户， 2: 物料    3：供应商
         public static string db_table;
+        public static int op = 1;  //1: 新增        2: 更新
 
     }
 }
