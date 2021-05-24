@@ -58,6 +58,12 @@
     <Compile Include="ClientAddOrUpdate.Designer.cs">
       <DependentUpon>ClientAddOrUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="MaterialAddOrUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaterialAddOrUpdate.Designer.cs">
+      <DependentUpon>MaterialAddOrUpdate.cs</DependentUpon>
+    </Compile>
     <Compile Include="SupplierAddorUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ClientAddOrUpdate.resx">
       <DependentUpon>ClientAddOrUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialAddOrUpdate.resx">
+      <DependentUpon>MaterialAddOrUpdate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SupplierAddorUpdate.resx">
       <DependentUpon>SupplierAddorUpdate.cs</DependentUpon>

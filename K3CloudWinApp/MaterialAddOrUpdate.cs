@@ -41,65 +41,65 @@ namespace K3CloudWinApp
                 "'FName': '测试',"  + // 名称
                 "'SubHeadEntity': {" +
                 "'FErpClsID': '1'," +//物料属性
-                "'FFeatureItem': '',"+ //特征件子项
+                //"'FFeatureItem': '',"+ //特征件子项  没搜到
                 "'FCategoryID': {" + //存货类别
-                    "'FNumber': ''" +
+                    "'FNumber': 'CHLB01_SYS'" +
                 "}," +
                 "'FBaseUnitId': {" + // 基本单位
                     "'FNumber': 'Pcs'" +
                 "}," +
-                "'FSuite': ''" + //套件
+                "'FSuite': '0'" + //套件
                 "}," +
                 "'SubHeadEntity1': {" +
                     "'FStoreUnitID': {" + //库存单位
-                        "'FNumber': ''" + 
+                        "'FNumber': 'Pcs'" + 
                     "}," +
-                    "'FUnitConvertDir': ''," + //换算方向
+                    "'FUnitConvertDir': '1'," + //换算方向    '1':基本单位->辅助单位    '2':辅助单位->基本单位
                     "'FCurrencyId': {" + //币别
-                        "'FNumber': ''" +
+                        "'FNumber': 'PRE001'" + //这里选人民币
                     "}," + 
                     "'FSNManageType': ''," +//业务范围
                     "'FSNGenerateTime': ''" + //序列号生成时机
                 "}," +
                 "'SubHeadEntity2': {" +
                     "'FSaleUnitId': {" + //销售单位
-                        "'FNumber': ''" +
+                        "'FNumber': 'Pcs'" +  
                     "}," +
                     "'FSalePriceUnitId': {" + // 销售计价单位
-                        "'FNumber': ''" +
+                        "'FNumber': 'Pcs'" +
                     "}" + 
                 "}," +
                 "'SubHeadEntity3': {" +
                     "'FPurchaseUnitId': {" +  //采购单位
-                        "'FNumber': ''" +
+                        "'FNumber': 'Pcs'" +
                     "}," + 
                     "'FPurchasePriceUnitId': {" +  //采购计价单位
-                        "'FNumber': ''" +
+                        "'FNumber': 'Pcs'" +
                     "}," +
-                    "'FQuotaType': ''," +  //配额方式
+                    "'FQuotaType': '0'," +  //配额方式
                 "}," +
                 "'SubHeadEntity4': {" +
-                    "'FPlanningStrategy': ''," +   // 计划策略
-                    "'FOrderPolicy': ''," +  //订货策略
-                    "'FFixLeadTimeType': ''," + // 固定提前期单位
-                    "'FVarLeadTimeType': ''," +  //变动提前期单位
-                    "'FCheckLeadTimeType': ''," + //检验提前期单位
-                    " 'FOrderIntervalTimeType': ''," +  //订货间隔期单位
-                    "'FReserveType': ''," +  //预留类型
-                    "'FPlanOffsetTimeType': ''," +   //时间单位
-                "'SubHeadEntity5': {" +
-                    "'FIssueType': ''," +   //发料方式
-                    "'FOverControlMode': ''," +// 超发控制方式
+                    "'FPlanningStrategy': '1'," +   // 计划策略
+                    "'FOrderPolicy': '0'," +  //订货策略
+                    "'FFixLeadTimeType': '1'," + // 固定提前期单位
+                    "'FVarLeadTimeType': '1'," +  //变动提前期单位
+                    "'FCheckLeadTimeType': '1'," + //检验提前期单位
+                    " 'FOrderIntervalTimeType': '3'," +  //订货间隔期单位
+                    "'FReserveType': '1'," +  //预留类型
+                    "'FPlanOffsetTimeType': '1'," +   //时间单位
+                "'SubHeadEntity5': {" +     //t_BD_MaterialProduce
+                    "'FIssueType': '1'," +   //发料方式
+                    "'FOverControlMode': '1'," +// 超发控制方式
                     "'FMinIssueUnitId': {" +   //最小发料批量单位
-                       " 'FNUMBER': ''" +
+                       " 'FNUMBER': 'Pcs'" +
                     "}," +
-                    "'FStandHourUnitId': ''," +    //工时单位
-                    "'FBackFlushType': ''" +   //倒冲数量
+                    "'FStandHourUnitId': '3600'," +    //工时单位
+                    "'FBackFlushType': '1'" +   //倒冲数量
                 "}," +
-                "'FEntityInvPty': [" + 
+                "'FEntityInvPty': [" +   //t_BD_MaterialInvPty
                     "{" +
                         "'FInvPtyId': {"  +//库存属性
-                            "'FNumber': ''" +
+                            "'FNumber': '10001'" +
                         "} } ] } }";
                     
         }
