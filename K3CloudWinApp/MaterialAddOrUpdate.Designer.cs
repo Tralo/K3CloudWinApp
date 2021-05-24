@@ -35,11 +35,13 @@
             this.tb_id = new System.Windows.Forms.TextBox();
             this.tb_show = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.tb_number = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(442, 88);
+            this.btn_add.Location = new System.Drawing.Point(442, 74);
             this.btn_add.Name = "btn_add";
             this.btn_add.Size = new System.Drawing.Size(97, 38);
             this.btn_add.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             // tb_fname
             // 
-            this.tb_fname.Location = new System.Drawing.Point(179, 92);
+            this.tb_fname.Location = new System.Drawing.Point(179, 53);
             this.tb_fname.Name = "tb_fname";
             this.tb_fname.Size = new System.Drawing.Size(231, 28);
             this.tb_fname.TabIndex = 1;
@@ -57,7 +59,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 95);
+            this.label1.Location = new System.Drawing.Point(30, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 18);
             this.label1.TabIndex = 2;
@@ -71,6 +73,7 @@
             this.btn_update.TabIndex = 3;
             this.btn_update.Text = "更新";
             this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // tb_id
             // 
@@ -96,11 +99,29 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "请输入物料内码";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(27, 116);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 18);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "请输入物料编码";
+            // 
+            // tb_number
+            // 
+            this.tb_number.Location = new System.Drawing.Point(179, 116);
+            this.tb_number.Name = "tb_number";
+            this.tb_number.Size = new System.Drawing.Size(231, 28);
+            this.tb_number.TabIndex = 8;
+            // 
             // MaterialAddOrUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(725, 647);
+            this.Controls.Add(this.tb_number);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tb_show);
             this.Controls.Add(this.tb_id);
@@ -124,5 +145,7 @@
         private System.Windows.Forms.TextBox tb_id;
         private System.Windows.Forms.TextBox tb_show;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox tb_number;
     }
 }

@@ -83,6 +83,7 @@ namespace K3CloudWinApp
         }
         private ClientAddOrUpdate clientAddOrUpdate;
         private SupplierAddorUpdate supplierAddorUpdate;
+        private MaterialAddOrUpdate materialAllOrUpdate;
         private void btn_create_Click(object sender, EventArgs e)
         {
             if (clientAddOrUpdate != null)
@@ -92,6 +93,10 @@ namespace K3CloudWinApp
             if(supplierAddorUpdate != null){
                 supplierAddorUpdate.Dispose();
             }
+            if (materialAllOrUpdate != null)
+            {
+                materialAllOrUpdate.Dispose();
+            }
             switch (Global.curType)
             {
                 case 1:
@@ -99,6 +104,8 @@ namespace K3CloudWinApp
                     clientAddOrUpdate.ShowDialog(this);
                     break;
                 case 2:
+                    materialAllOrUpdate = new MaterialAddOrUpdate();
+                    materialAllOrUpdate.ShowDialog(this);
                     break;
                 case 3:
                     supplierAddorUpdate = new SupplierAddorUpdate();

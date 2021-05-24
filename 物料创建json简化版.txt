@@ -1,0 +1,21 @@
+"{" + 
+                "'NeedUpDateFields': []," + 
+                "'NeedReturnFields': ['FMATERIALID','FNUMBER']," +
+                "'IsDeleteEntry': 'true'," +
+                "'SubSystemId': ''," +
+                "'IsVerifyBaseDataField': 'false'," +
+                "'IsEntryBatchFill': 'true'," + 
+                " 'ValidateFlag': 'true'," +
+                "'NumberSearch': 'true'," +
+                "'InterationFlags': ''," + 
+                "'Model': {" +
+                "'FMATERIALID': 0,"  +
+                "'FCreateOrgId': {" +  //创建组织
+                "'FNumber': '101.2'" + 
+                "}," +
+                "'FUseOrgId': {" + //使用组织
+                "'FNumber': '101.2'" +
+                "}," + 
+                "'FNumber': ''," +  //更新时可以
+                "'FName': '测试',"  + // 名称
+" } }"
